@@ -4,4 +4,11 @@ import { AppComponent } from './app/app.component';
 import { provideStore } from '@ngrx/store';
 import {  provideEffects } from '@ngrx/effects';
 
-bootstrapApplication(AppComponent, appConfig);
+bootstrapApplication(AppComponent, {
+    ...appConfig,
+    providers: [
+        ...appConfig.providers,
+        provideStore(),        // ✅ provide root store ONCE here
+        provideEffects([]),    // ✅ provide root effects ONCE here
+    ],
+});

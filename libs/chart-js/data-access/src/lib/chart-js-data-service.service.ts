@@ -7,14 +7,8 @@ import { IChart, IChartDecimation, IData } from './models';
   providedIn: 'root'
 })
 export class ChartJsDataServiceService {
-
-  private pie_chart$ = new  BehaviorSubject<IChart | null>(null);
-  private bar_chart$ = new  BehaviorSubject<IChart | null>(null);
-  private line_chart$ = new BehaviorSubject<IChart | null>(null);
-  private line_chart2$ = new BehaviorSubject<IChartDecimation[] | null>([]);
   
   constructor(private http: HttpClient) { }
-
 
   getData(){
     return this.http
