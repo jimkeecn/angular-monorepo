@@ -19,3 +19,12 @@ export interface IChartDecimation{
     x: any;
     y: any;
 }
+
+
+export interface ChartDataState {
+    data: IData[];
+    pieChart: IChart | null;
+    barChart: IChart | null;
+    lineChart: IChart | null;
+    lineChart2: IChartDecimation[] | null;
+}

@@ -12,6 +12,12 @@
     "@angular/platform-browser": "~19.2.0",
     "@angular/platform-browser-dynamic": "~19.2.0",
     "@angular/router": "~19.2.0",
+    "@ngrx/effects": "^19.0.1",
+    "@ngrx/store": "^19.0.1",
+    "ag-grid-angular": "^33.1.1",
+    "chart.js": "^4.4.8",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "d3": "^7.9.0",
     "rxjs": "~7.8.0",
     "zone.js": "~0.15.0"
   },

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ChartJsDataServiceService } from './chart-js-data-service.service';
+import { ChartJsDataFacades } from './+state/chart-js-data.facades';
 
 
 
@@ -8,6 +9,6 @@ import { ChartJsDataServiceService } from './chart-js-data-service.service';
   imports: [
     CommonModule
   ],
-  providers:[ChartJsDataServiceService]
+  providers:[ChartJsDataServiceService,ChartJsDataFacades]
 })
 export class ChartJsDataModuleModule { }
