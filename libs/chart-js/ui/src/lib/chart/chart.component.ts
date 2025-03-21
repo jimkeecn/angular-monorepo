@@ -4,10 +4,10 @@ import { Chart, ChartConfiguration } from 'chart.js';
 
 @Component({
   selector: 'am-chart-js-ui-chart',
-  imports: [CommonModule],
   templateUrl: './chart.component.html',
   styleUrl: './chart.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone:false,
 })
 export class ChartComponent implements OnInit {
   private _config!: any;
@@ -21,6 +21,7 @@ export class ChartComponent implements OnInit {
     }
   }
   @Input() id!: string;
+  @Input() chartTitle!: string;
   constructor() { }
   
   ngOnInit(): void {

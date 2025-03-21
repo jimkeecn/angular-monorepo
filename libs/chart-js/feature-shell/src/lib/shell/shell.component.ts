@@ -2,12 +2,16 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ChartJsDataFacades } from '@angular-monorepo/chart-js/data-access';
 import { ChartConfiguration } from 'chart.js';
-import { fakeChartjsContext } from './models/shell';
+import {
+  fakeChartjsContext, PieChartConst, BarChartConst, LineChartConst,
+  LineChart2Const, LineChart3Const, PieChartTitleConst, BarChartTitleConst, LineChartTitleConst,
+  LineChartTitle2Const,LineChart3TitleConst
+} from './models/shell';
 @Component({
-  selector: 'lib-shell',
-  imports: [CommonModule],
+  selector: 'am-chart-js-feature-shell-shell',
   templateUrl: './shell.component.html',
   styleUrl: './shell.component.scss',
+  standalone:false,
 })
 export class ShellComponent implements OnInit, OnDestroy {
 
@@ -15,7 +19,20 @@ export class ShellComponent implements OnInit, OnDestroy {
   bar_chart: any | Partial<ChartConfiguration>;
   line_chart: any | Partial<ChartConfiguration>;
   line_chart2: any | Partial<ChartConfiguration>;
-  line_chart3: any | Partial<ChartConfiguration>;;
+  line_chart3: any | Partial<ChartConfiguration>;
+
+  readonly PieChartConst = PieChartConst;
+  readonly BarChartConst = BarChartConst;
+  readonly LineChartConst = LineChartConst;
+  readonly LineChart2Const = LineChart2Const;
+  readonly LineChart3Const = LineChart3Const;
+
+  readonly PieChartTitleConst = PieChartTitleConst;
+  readonly BarChartTitleConst = BarChartTitleConst;
+  readonly LineChartTitleConst = LineChartTitleConst;
+  readonly LineChartTitle2Const = LineChartTitle2Const;
+  readonly LineChart3TitleConst = LineChart3TitleConst;
+
   constructor(private chartJsDataFacades: ChartJsDataFacades) {
     
   }
