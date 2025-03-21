@@ -28,3 +28,13 @@ export interface ChartDataState {
     lineChart: IChart | null;
     lineChart2: IChartDecimation[] | null;
 }
+
+export const CHART_JS_FEATURE_KEY = 'chartJs';
+
+export const initialState: ChartDataState = {
+    data: [],
+    pieChart: null,
+    barChart: null,
+    lineChart: null,
+    lineChart2: null,
+};

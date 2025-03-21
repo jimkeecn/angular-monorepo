@@ -1,18 +1,6 @@
 import { createReducer, on } from '@ngrx/store';
 import { loadChartData, loadChartDataSuccess } from './chart-js-data.actions';
-import { ChartDataState, IChart, IChartDecimation, IData } from '../models';
-
-
-export const CHART_JS_FEATURE_KEY = 'chartJs';
-
-export const initialState: ChartDataState = {
-    data: [],
-    pieChart: null,
-    barChart: null,
-    lineChart: null,
-    lineChart2: null,
-};
-
+import { ChartDataState, IChart, IChartDecimation, IData, initialState } from '../models';
 
 export const chartDataReducer = createReducer(
     initialState,
