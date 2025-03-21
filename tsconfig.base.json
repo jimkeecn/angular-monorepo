@@ -20,7 +20,8 @@
       ],
       "@angular-monorepo/chart-js/feature-shell": [
         "libs/chart-js/feature-shell/src/index.ts"
-      ]
+      ],
+      "@angular-monorepo/chart-js/ui": ["libs/chart-js/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
