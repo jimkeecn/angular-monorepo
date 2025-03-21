@@ -17,6 +17,9 @@
     "paths": {
       "@angular-monorepo/chart-js/data-access": [
         "libs/chart-js/data-access/src/index.ts"
+      ],
+      "@angular-monorepo/chart-js/feature-shell": [
+        "libs/chart-js/feature-shell/src/index.ts"
       ]
     }
   },
