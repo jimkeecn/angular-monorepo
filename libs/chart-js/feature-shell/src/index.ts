@@ -1,1 +1,1 @@
-export * from './lib/chartjs.module';
+export * from './lib/chart-js-feature-shell.module';

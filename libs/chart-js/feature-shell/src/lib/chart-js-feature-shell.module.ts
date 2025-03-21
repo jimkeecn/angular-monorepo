@@ -15,4 +15,4 @@ import { ShellComponent } from './shell/shell.component';
     ChartjsRoutingModule,
   ]
 })
-export class ChartjsModule { }
+export class ChartJsFeatureShellModule { }
