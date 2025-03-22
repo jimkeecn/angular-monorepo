@@ -69,7 +69,7 @@ export class ShellComponent implements OnInit, OnDestroy {
           }
         } as Partial<ChartConfiguration>
       } else {
-        alert('No data found for pie chart');
+        console.error('No data found for pie chart');
       }
     });
 
@@ -122,7 +122,7 @@ export class ShellComponent implements OnInit, OnDestroy {
           }
         } as Partial<ChartConfiguration>
       } else {
-        alert('No data found for bar chart');
+        console.error('No data found for bar chart');
       }
     })
 
@@ -271,7 +271,7 @@ export class ShellComponent implements OnInit, OnDestroy {
         }
 
       } else {
-        alert('No data found for line chart');
+        console.error('No data found for line chart');
       }
     })
 
@@ -314,7 +314,7 @@ export class ShellComponent implements OnInit, OnDestroy {
           }
         } as Partial<ChartConfiguration>
       } else {
-        alert('No data found for line chart 2');
+        console.error('No data found for line chart 2');
       }
     });
     

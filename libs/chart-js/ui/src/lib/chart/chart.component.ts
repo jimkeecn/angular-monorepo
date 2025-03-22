@@ -1,7 +1,8 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Chart, ChartConfiguration } from 'chart.js';
-
+import { Chart, ChartConfiguration,registerables } from 'chart.js';
+Chart.register(...registerables);
+import "chartjs-adapter-date-fns";
 @Component({
   selector: 'am-chart-js-ui-chart',
   templateUrl: './chart.component.html',
@@ -17,11 +18,15 @@ export class ChartComponent implements OnInit {
   }
   set config(value: ChartConfiguration) { 
     if (value) {
-      new Chart(this.id, value);
+      console.log(value);
+      setTimeout(() => {
+        new Chart(this.id, value);
+      })
+      
     }
   }
   @Input() id!: string;
-  @Input() chartTitle!: string;
+  @Input() chartTitle: string = 'Chart is loading back....';
   constructor() { }
   
   ngOnInit(): void {

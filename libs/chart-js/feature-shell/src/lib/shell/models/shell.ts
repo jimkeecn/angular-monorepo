@@ -13,4 +13,4 @@ export const PieChartTitleConst = 'Pie Chart (interaction mode as dataset)';
 export const BarChartTitleConst = 'Bar Chart (adjust y label)';
 export const LineChartTitleConst = 'Line Chart (show gradien color bg)';
 export const LineChartTitle2Const = 'Line Chart 2 (show X axis in every 5 year)';
-export const LineChart3TitleConst = 'Line Chart 3 (decimation)';
+export const LineChart3TitleConst = 'Line Chart 3 (decimation: 100 threshold)';
