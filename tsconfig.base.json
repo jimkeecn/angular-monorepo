@@ -19,6 +19,10 @@
       "@angular-monorepo/ag-grid-data-access": [
         "libs/ag-grids/data-access/src/index.ts"
       ],
+      "@angular-monorepo/ag-grid-feature-shell": [
+        "libs/ag-grids/feature-shell/src/index.ts"
+      ],
+      "@angular-monorepo/ag-grid-ui": ["libs/ag-grids/ui/src/index.ts"],
       "@angular-monorepo/chart-js/data-access": [
         "libs/chart-js/data-access/src/index.ts"
       ],
