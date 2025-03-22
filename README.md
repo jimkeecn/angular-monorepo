@@ -84,12 +84,22 @@ And join the Nx community:
 
 ## More commands
 nx g @nx/angular:lib --name=ag-grid-data-access --directory=libs/ag-grids/data-access --skip-tests
+
 nx g @nx/angular:module data-access --project=ag-grid-data-access --flat
+
 nx g @nx/angular:lib --name=ag-grid-feature-shell --directory=ag-grids/feature-shell --style=scss --standalone=false --skip-tests
+
 nx g @nx/angular:module feature-shell --project=ag-grid-feature-shell --flat --routing
+
 nx g @nx/angular:lib ag-grid-ui --directory=ag-grids/ui --style=scss --standalone=false
+
 nx g @nx/angular:lib --name=ag-grid-ui --directory=libs/ag-grids/ui --skip-tests --style=scss --standalone=false 
+
 nx g @nx/angular:component company-logo-renderer --path=libs/ag-gird/ui/src/lib --skip-tests --style=scss --standalone=false
+
 nx g @nx/angular:component libs/ag-grids/ui/src/lib/company-logo-renderer/company-logo-renderer --skip-tests --style=scss --standalone=false --changeDetection=OnPush
+
 nx g @nx/angular:component expend-buttonr/expend-button --skip-tests --style=scss --standalone=false --changeDetection=OnPush --inlineStyle --inlineTemplate
+
+nx g @nx/angular:ngrx --parent=libs/ag-grid/feature-shell/src/lib/ag-grid.module.ts --facade=true --root=false feature-shell
 

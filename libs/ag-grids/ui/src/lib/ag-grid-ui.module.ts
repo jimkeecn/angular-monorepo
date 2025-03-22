@@ -6,5 +6,6 @@ import { ExpendButtonComponent } from './expend-buttonr/expend-button.component'
 @NgModule({
   imports: [CommonModule],
   declarations: [CompanyLogoRendererComponent, ExpendButtonComponent],
+  exports:[CompanyLogoRendererComponent, ExpendButtonComponent]
 })
 export class AgGridUiModule {}
