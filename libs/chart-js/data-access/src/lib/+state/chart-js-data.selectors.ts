@@ -1,7 +1,7 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { ChartDataState } from '../models';
+import { CHART_JS_FEATURE_KEY, ChartDataState } from '../models';
 
-const selectChartState = createFeatureSelector<ChartDataState>('chartData');
+const selectChartState = createFeatureSelector<ChartDataState>(CHART_JS_FEATURE_KEY);
 
 export const selectPieChart = createSelector(selectChartState, (state) => state.pieChart);
 export const selectBarChart = createSelector(selectChartState, (state) => state.barChart);
