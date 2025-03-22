@@ -8,8 +8,15 @@ import { ChartJsDataServiceService } from '../chart-js-data-service.service';
 
 @Injectable()
 export class ChartDataEffects{
-    constructor(private actions$: Actions, private service:ChartJsDataServiceService) {
+    constructor(private actions$: Actions, private service: ChartJsDataServiceService) {
+
+        this.actions$.subscribe(action => {
+            console.log('Dispatched action:', action);
+        });
         
+        if (!this.actions$) {
+            throw new Error('NgRx Actions$ is undefined! Did you forget EffectsModule.forRoot([])?');
+        }
     }
 
     loadData$ = createEffect(() =>

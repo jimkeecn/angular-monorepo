@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  imports: [RouterModule],
   selector: 'am-first-app',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  standalone:false,
 })
 export class AppComponent {
 }

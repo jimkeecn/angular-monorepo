@@ -12,9 +12,9 @@ import { EffectsModule } from '@ngrx/effects';
   declarations: [ShellComponent],
   imports: [
     CommonModule,
-    ChartjsuiModule,
     ChartJsDataModuleModule,
     ChartjsRoutingModule,
+    ChartjsuiModule,
   ],
 })
 export class ChartJsFeatureShellModule { }
