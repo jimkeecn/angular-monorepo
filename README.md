@@ -80,3 +80,9 @@ And join the Nx community:
 - [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
 - [Our Youtube channel](https://www.youtube.com/@nxdevtools)
 - [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+
+
+## More commands
+nx g @nx/angular:lib --name=ag-grid-data-access --directory=libs/ag-grids/data-access
+nx g @nx/angular:module data-access --project=ag-grid-data-access --flat
+
